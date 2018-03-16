@@ -18,8 +18,9 @@
         <h1>.NET Nuts and Bolts <small>HTML5 UI's in desktop applications</small></h1>
       </div>
 
-      <p class="lead">In this first paragraph are a number of buttons, the buttons are hooked to normal Javascript functions, which can then
-      call directly into the C# code inside the windows forms application.
+      <p class="lead">
+          In this first paragraph are a number of buttons, the buttons are hooked to normal Javascript functions, which can then
+          call directly into the C# code inside the windows forms application.在第一段中有许多按钮，这些按钮被连接到正常的Javascript函数，然后可以直接调用windows窗体应用程序中的c#代码。
       </p>
 
       <button class="btn btn-primary" id="buttonOne">Save Form Values</button>
@@ -36,8 +37,15 @@
       </p>
 
       <p><span class="text-success">UPDATE:</span> cefsharp does have a way to intercept requests, I've just not figured out how to use it yet :-) I will however update this example once I do.</p>
+      <p>
+          接下来，我们有一个示例表单供您填写，当您发布此消息时，结果将转到winforms应用程序，应用程序将决定显示哪个页面，以及如何处理这些数据。
 
-      <h4 class="text-info">Everything is styled using Bootstrap :-)</h4>
+          但是要注意，为了将表单发送到winform应用程序，您必须使用javascript来捕获表单提交事件，cefsharp没有内置的方法来拦截post，并且通常从表单操作获取数据。
+
+          更新:cefsharp确实有一种拦截请求的方法，我还不知道如何使用它:-)我将会在我做的时候更新这个例子。
+      </p>
+
+      <h4 class="text-info">所有东西都使用Bootstrap来样式化（Everything is styled using Bootstrap） :-)</h4>
 
       <br />
       <br />

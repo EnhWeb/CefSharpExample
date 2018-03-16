@@ -74,7 +74,7 @@ namespace cefsharp_v2
     {
       _savedName = e.Name;
       _savedEmail = e.Email;
-      MessageBox.Show("Form elements saved, now change or empty the form contents, and you'll be able to re-populate them", ".NET Alert Box");
+      MessageBox.Show("表单元素保存，现在更改或清空表单内容，您将能够重新填充它们。", ".NET Alert Box");
     }
 
     void BrowserTitleChanged(object sender, TitleChangedEventArgs e)
@@ -136,13 +136,14 @@ namespace cefsharp_v2
       _browser.ExecuteScriptAsync(script);
     }
 
+        //填充表格
     private void BtnPopulateFormClick(object sender, EventArgs e)
     {
 
       if(String.IsNullOrEmpty(_savedName) || String.IsNullOrEmpty(_savedEmail))
       {
         MessageBox.Show(
-          "Please save a name and email to reuse before populating the form, you can do this by entering values in the form then clicking the 'save button'",
+          "请在填充表单之前保存名称和电子邮件以便使用。  首先你需要在表单中输入值然后点击'保存按钮'",
           ".NET Alert Box");
         return;
       }
